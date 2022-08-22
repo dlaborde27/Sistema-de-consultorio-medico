@@ -1,0 +1,2 @@
+Cédula,fecha,hora,cliente,servicio,empleado
+0986593256,24/07/2022,14:00,Cristiano Ronaldo,Terapia de lenguaje,Ortega Pavon

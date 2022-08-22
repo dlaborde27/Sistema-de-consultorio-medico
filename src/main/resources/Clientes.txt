@@ -1,0 +1,4 @@
+Cédula,nombre,telefono,email,representante
+0941430688,Dario Laborde,0995161010,dlaborde@espol.edu.ec,Clara Jimenez
+0941430688,23/07/2022,15:00,Dario Laborde,Terapia de lenguaje
+0941430688,18/08/2022,15:30,Jose Miguel,Terapia de lenguaje

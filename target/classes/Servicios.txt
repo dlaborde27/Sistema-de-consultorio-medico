@@ -1,0 +1,5 @@
+Cédula,nombre,telefono,email,estado
+Terapia de lenguaje,120,25.0,false
+Terapia psicopedagogica,90,20.0,false
+Terapia de lenguaje,90,20.0,false
+Sexo a domicilio,30,50.0,false

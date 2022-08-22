@@ -1,0 +1,5 @@
+Cédula,nombre,telefono,email,estado
+0941430688,Dario Laborde,0995161010,Dario Laborde,false
+0986935966,Jorge Ivan Martinez,0941586933,Jorge Ivan Martinez,false
+0958693589,Marcos Espin,0995862145,marquitos@espol.edu.ec,false
+0958985160,Jordan Salinas,0980003453,Jordan Salinas,false
