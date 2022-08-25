@@ -21,5 +21,10 @@ public abstract class Cambios {
     @FXML
     public void botonCitas(ActionEvent event) throws IOException{
         App.setRoot("citas");
+    
+    }
+    @FXML
+    public void botonAtencion (ActionEvent event) throws IOException {
+       App.setRoot("atenciones"); 
     }
 }

@@ -244,7 +244,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button alignment="CENTER_RIGHT" graphicTextGap="10.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="198.0" text="Atención">
+            <Button alignment="CENTER_RIGHT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#botonAtencion" prefHeight="38.0" prefWidth="198.0" text="Atención">
                <font>
                   <Font name="Arial Bold" size="12.0" />
                </font>
