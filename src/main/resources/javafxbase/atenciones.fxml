@@ -6,7 +6,6 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -22,7 +21,7 @@
    <children>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="781.0">
          <children>
-            <GridPane layoutX="209.0" layoutY="138.0" prefHeight="169.0" prefWidth="554.0">
+            <GridPane layoutX="209.0" layoutY="138.0" prefHeight="219.0" prefWidth="554.0">
                <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                </columnConstraints>
@@ -31,11 +30,12 @@
                   <RowConstraints maxHeight="157.6" minHeight="10.0" prefHeight="157.6" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <TableView fx:id="tablaCitas" prefHeight="361.0" prefWidth="554.0" GridPane.rowIndex="1">
+                  <TableView fx:id="tablaAtencion" maxHeight="400.0" prefHeight="200.0" prefWidth="586.0" GridPane.rowIndex="1">
                      <columns>
-                        <TableColumn fx:id="columnaCedula" prefWidth="111.19996643066406" style="-fx-background-color: #8145;" text="Cédula" />
-                        <TableColumn fx:id="columnaDuracion" prefWidth="72.800048828125" style="-fx-background-color: #8145;" text="Duración" />
-                        <TableColumn fx:id="columnaEmpleado" prefWidth="111.199951171875" style="-fx-background-color: #8145;" text="Empleado" />
+                        <TableColumn fx:id="columnaNombre" prefWidth="111.19996643066406" style="-fx-background-color: #8145;" text="Nombre" />
+                        <TableColumn fx:id="columnaTerapista" prefWidth="72.800048828125" style="-fx-background-color: #8145;" text="Terapista" />
+                        <TableColumn fx:id="columnaServicio" prefWidth="111.199951171875" style="-fx-background-color: #8145;" text="Servicio" />
+                        <TableColumn fx:id="columnaaFecha" prefWidth="75.0" style="-fx-background-color: #8145;" text="Fecha" />
                      </columns>
                      <columnResizePolicy>
                         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
@@ -179,7 +179,7 @@
                   </Button>
                </children>
             </VBox>
-            <Button alignment="CENTER" layoutX="343.0" layoutY="307.0" mnemonicParsing="false" onAction="#crearAtencion" prefHeight="26.0" prefWidth="94.0" text="Agregar" textAlignment="CENTER">
+            <Button alignment="CENTER" layoutX="339.0" layoutY="378.0" mnemonicParsing="false" onAction="#botonCitas" prefHeight="36.0" prefWidth="102.0" text="Crear Cita" textAlignment="CENTER">
                <graphic>
                   <ImageView fitHeight="28.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -194,40 +194,21 @@
                   <Insets />
                </opaqueInsets>
             </Button>
-            <Button alignment="CENTER" graphicTextGap="5.0" layoutX="481.0" layoutY="307.0" mnemonicParsing="false" onAction="#consultarAtencion" prefHeight="36.0" prefWidth="101.0" text="Consultar" textAlignment="CENTER">
-               <graphic>
-                  <ImageView fitHeight="29.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../Img/buscar.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
+            <Button alignment="CENTER" graphicTextGap="5.0" layoutX="499.0" layoutY="377.0" mnemonicParsing="false" onAction="#registrarAtencion" prefHeight="38.0" prefWidth="153.0" text="Registrar Atención" textAlignment="CENTER">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Img/boton-agregar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
             </Button>
-            <GridPane layoutX="337.0" layoutY="353.0">
-              <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-              </columnConstraints>
-              <rowConstraints>
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-              </rowConstraints>
-               <children>
-                  <Label prefHeight="18.0" prefWidth="50.0" text="Cédula:" />
-                  <Label prefHeight="18.0" prefWidth="73.0" text="Duración:" GridPane.rowIndex="1" />
-                  <Label text="Empleado:" GridPane.rowIndex="2" />
-                  <TextField fx:id="cedulaTxt" GridPane.columnIndex="1" />
-                  <TextField fx:id="duracionTxt" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <TextField fx:id="empleadoTxt" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-               </children>
-            </GridPane>
          </children>
       </AnchorPane>
    </children>

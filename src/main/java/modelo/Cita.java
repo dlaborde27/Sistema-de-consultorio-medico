@@ -68,6 +68,13 @@ public class Cita {
     public void setServicio(String servicio) {
         this.servicio = servicio;
     }
+
+    @Override
+    public String toString() {
+        return "Cita{" + "fecha=" + fecha + ", hora=" + hora + ", cedula=" + cedula + ", cliente=" + cliente + ", empleado=" + empleado + ", servicio=" + servicio + '}';
+    }
+    
+    
     
     public static ArrayList<Cita> cargarLista(){
         ArrayList<Cita> citas = new ArrayList<>();
