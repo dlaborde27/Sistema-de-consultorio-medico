@@ -1,1 +1,1 @@
-# Proyecto_de_POO
+# Sistema de consultorio medico
